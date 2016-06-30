@@ -1,0 +1,78 @@
+
+@media only screen and (min-width: 982px){
+#logo{
+	 max-width: 100%;
+	}
+#navigation{
+	.container{
+		height: 100px;
+	}
+}
+
+#home-slider {
+	margin-top:80px;
+}
+
+.line2{
+	font-size:28px !important;
+	line-height:28px;
+}
+
+
+#price{
+	
+
+	.price-table{
+		
+
+		/*Down pointing*/
+		.arrow {
+		   
+
+		    &:after{
+		    	
+    			margin-top: -180px;
+   
+		    }
+		}
+		
+		
+		
+		.price-body{
+			
+			.promotion-rate{
+				
+				.rate{
+					
+					font-size: 34px;
+					
+				}
+				
+			}
+		}
+
+	}
+
+	
+	
+}
+
+// Servive
+
+
+
+#service{
+	padding-top:100px;
+
+	.service-item{
+		
+	}
+}
+
+
+//End service 
+	
+}
+
+
+

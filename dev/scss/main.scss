@@ -1,0 +1,356 @@
+//@import "frameworks/layer";
+@import "compass/css3/font-face";
+// @import "themes/font";
+@import "frameworks/templateStyle.scss";
+
+
+body{
+    font-family: Quicksand;
+}
+
+ section{
+ 	 font-family: Quicksand;
+ }
+
+#logo{
+	 max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+.navbar-inverse{
+	background-color:#fff !important;
+}
+
+
+.navbar-inverse{
+	.navbar-nav{
+		li{
+			a{
+				&:hover{
+					color: #000;
+					font-weight: bold;
+				}
+				&:focus{
+						color: #000;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+}
+
+.navbar-inverse {
+	.navbar-collapse{
+		border:none;
+ 
+	}
+}
+
+
+
+.navbar-brand{
+	padding:0px;
+}
+
+.navbar-inverse .navbar-toggle{
+	border-color: #000;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+
+}
+.slide-caption h2{
+	font-weight:bold;
+	font-family:Quicksand !important;
+}
+.slide-caption span{
+	
+	font-family:Quicksand !important;
+}
+
+.line3{
+	font-weight:bold;
+}
+
+
+//About
+
+#about{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.about{
+	padding-top:70px;
+	height:573px;
+	background-size:cover;
+	background-repeat:no-repeat;
+background-position: center; 
+	.about-des{
+		font-family: tahoma;
+		color: #000;
+		font-size: 14px;
+		text-align:left;
+		overflow: scroll;
+		max-height:320px;
+		p{
+			margin-bottom:15px;
+		}
+	}
+}
+.about {
+	h2{
+		font-weight: bold;
+		padding-bottom: 0px;
+		&:after{
+			border: none;
+		}
+	}
+}
+#about_left{
+
+	background-image: url(../img/about/bgleft.jpg);
+	padding-left:40px;
+	padding-right:40px;
+
+
+}
+#about_right{
+
+	background-image: url(../img/about/bgright.jpg);
+   padding-left:40px;
+	padding-right:40px;
+	.news-video{
+		overflow: scroll;
+		max-height:320px;
+		.content-item{
+			text-align: left;
+			margin-bottom:10px;
+			
+			
+
+			img{
+				float: left;
+				width: 100px;
+			}
+			.date{
+				margin: 0;
+				text-align: left;
+				padding-left:115px;
+				color: #808184;
+				font-size: 11px;
+			}
+			.title{
+				margin: 0;
+				padding-left:115px;
+				text-align: left;
+				font-size: 12px;
+				color: #000;
+				font-weight: bold;
+			}
+			a{
+
+				font-size: 12px;
+				display: inline-block;
+				width: 150px;
+				text-align: center;
+				color: #007934;
+				border:1px solid #007934;
+				padding:7px 10px 7px 10px;
+				margin-left:15px;
+				margin-top:10px;
+			}
+			.line{
+				padding:15px;
+				border-bottom:1px dashed #808184;
+			}
+		}
+	}
+}
+
+// end about
+
+
+//Service 
+#service{
+
+	background-image: url(../img/service/bg.jpg);
+	color:#fff !important;
+	h2,h3{
+		color: #fff;
+		&:after{
+			border:none;
+		}
+	}
+	.sec-title {
+		h2{
+			margin-bottom:0px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 22px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	} 
+
+	.service-item{
+		&:after{
+			clear: both;
+		}
+		margin-top:20px;
+		h3{
+			font-size:14px;
+			font-weight: bold;
+		}
+
+		p{
+				font-size:12px;
+				font-weight: normal;
+				line-height: 14px;
+				height: 170px;
+		}
+	}
+}
+
+//End service 
+
+// Price
+#price{
+	h2,h3{
+		font-weight: bold;
+		&:after{
+			border:none;
+		}
+	}
+	.sec-title {
+		h2{
+			margin-bottom:0px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 22px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	} 
+
+	.price-table{
+		margin-bottom:0;
+		>span{
+			
+			height: 100px;
+			font-weight: bold;
+			
+		}
+
+		/*Down pointing*/
+		.arrow {
+		    width: 100%;
+		    height: 0;
+		    padding-left:50%;
+		    padding-top: 50% ;
+		    overflow: hidden;
+
+		    &:after{
+		    	 content: "";
+		    display: block;
+		    width: 0;
+		    height: 0;
+		       margin-left: -300px;
+    margin-top: -160px;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+		    }
+		}
+		
+		
+		
+		.price-body{
+			margin-top:-30px;
+			color: #000;
+			height: 250px;
+			padding:5px 20px;
+			.price-des{
+				height: 50px;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 14px;
+			}
+			.promotion-rate{
+				.title{
+					margin-top:70px;
+					color: #e61e26;
+					font-size: 16px;
+					font-weight: bold;
+					text-align: left;
+				}
+				.rate{
+					margin-top:10px;
+					text-align: left;
+					font-size: 24px;
+					font-weight: bold;
+					span{
+						font-size: 14px;
+						font-weight: bold;
+					}
+				}
+				.rate-des{
+					font-size: 14px;
+				}
+			}
+		}
+
+	}
+
+	.view-full{
+		padding:20px 0;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom:20px;
+	}
+
+	.color1{
+
+		background-color:#fde282;
+
+	}
+	.color2{
+		background-color:#92b7e1;
+	}
+	.color3{
+		background-color:#84bd95;
+	}
+	.color4{
+		background-color:#047940;
+	}
+	
+	.border1{
+		&:after{border-top:120px  solid #fde282;}
+		
+	
+	}
+	.border2{
+		&:after{border-top: 120px  solid #92b7e1;}
+		
+		
+	}
+	.border3{
+		&:after{border-top: 120px solid #84bd95;}
+		
+	
+	}
+	.border4{
+		&:after{	border-top: 120px  solid #047940;}
+	
+		
+	}
+	
+}
+//End Price
+
+
+@import "breakpoint/tablet";
+@import "breakpoint/desktop";
